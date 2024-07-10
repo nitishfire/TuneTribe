@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <application
+        android:name=".ApplicationClass"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light"
+        tools:targetApi="31">
+        <activity
+            android:name=".DeviceSongs"
+            android:exported="false" />
+        <activity
+            android:name=".Payment"
+            android:exported="false" />
+        <activity
+            android:name=".Artist_Main"
+            android:exported="false" />
+        <activity
+            android:name=".About"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".SelectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SelectSongPlaylist"
+            android:exported="false" />
+        <activity
+            android:name=".PlaylistDetails"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".playlist_view"
+            android:exported="false"
+            android:label="@string/title_activity_playlist_view"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Liked_Songs"
+            android:exported="false" />
+        <activity
+            android:name=".playlist_main"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".shawnM_album_layout"
+            android:exported="false" />
+        <activity
+            android:name=".weekend_album_layout"
+            android:exported="false" />
+        <activity
+            android:name=".charliePuth_album_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Idragon_album_layout"
+            android:exported="false" />
+        <activity
+            android:name=".released_album_layout"
+            android:exported="false" />
+        <activity
+            android:name=".edsheeran_album_layout"
+            android:exported="false" />
+        <activity
+            android:name=".coffeeZ_album_layout"
+            android:exported="false" />
+        <activity
+            android:name=".oneD_album_layout"
+            android:exported="false" />
+        <activity
+            android:name=".PlayerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".lofi_album_layout"
+            android:exported="false" />
+        <activity
+            android:name=".song_list_layout"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".LogIn"
+            android:exported="false" />
+        <activity
+            android:name=".Welcome_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/MyTheme_Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MusicService"
+            android:foregroundServiceType="mediaPlayback"
+            tools:ignore="ForegroundServicePermission" />
+
+        <receiver
+            android:name=".NotificationReceiver"
+            android:enabled="true" />
+
+        <meta-data
+            android:name="android.app.glEsVersion"
+            android:resource="@array/preloaded_fonts"
+            android:value="0x00030000" />
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_9TowzxJn5hUY7p" />
+    </application>
+
+</manifest>

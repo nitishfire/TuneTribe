@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "46533892817",
+    "firebase_url": "https://tunetribe-408414-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "tunetribe-408414",
+    "storage_bucket": "tunetribe-408414.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46533892817:android:7ef9bb807151cdc22ac3f0",
+        "android_client_info": {
+          "package_name": "com.example.musicplayer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46533892817-tnmtngcjhl45afolq0m4eb08c6s0cei9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBn9RBl2As2WAMoDEfVLEszx7qdemF8uMU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46533892817-tnmtngcjhl45afolq0m4eb08c6s0cei9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/blue_gradient"
+    tools:context=".fragment.NowPlaying">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/NPimage"
+        android:layout_width="60dp"
+        android:src="@drawable/cl_3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_height="45dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/NPNext"
+        android:layout_width="60dp"
+        app:borderWidth="0dp"
+        android:layout_marginLeft="340dp"
+        android:backgroundTint="@color/transperent"
+        android:src="@drawable/ford_arrow"
+        app:iconTint="@color/transperent"
+        android:layout_centerVertical="true"
+        app:iconSize="40dp"
+        android:layout_height="50dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/NPPlay"
+        android:layout_width="60dp"
+        app:borderWidth="0dp"
+        android:layout_marginLeft="280dp"
+        android:backgroundTint="@color/transperent"
+        android:src="@drawable/play_arrow"
+        app:iconTint="@color/transperent"
+        android:layout_centerVertical="true"
+        app:iconSize="40dp"
+        android:layout_height="50dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/NPBack"
+        android:layout_width="60dp"
+        app:borderWidth="0dp"
+        android:layout_marginLeft="220dp"
+        android:backgroundTint="@color/transperent"
+        android:src="@drawable/back_arrow"
+        app:iconTint="@color/transperent"
+        android:layout_centerVertical="true"
+        app:iconSize="40dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/cen_got_bold"
+        android:text="Song Name"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textSize="20sp" />
+
+</RelativeLayout>

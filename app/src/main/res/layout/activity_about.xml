@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sign_log_background_color"
+    tools:context=".About">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="320dp"
+        android:layout_height="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.1"
+        app:srcCompat="@drawable/slider_white" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="197dp"
+        android:layout_height="198dp"
+        android:cropToPadding="false"
+        android:src="@drawable/blue_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cen_got_bold"
+        android:text="About"
+        android:textColor="#00C2CB"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@color/transperent"
+        android:padding="50dp"
+        android:src="@drawable/left_arrow_for_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.031"
+        tools:ignore="RtlHardcoded,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="410dp"
+        android:layout_height="404dp"
+        android:fontFamily="@font/mulish_bold"
+        android:text='"TuneTribe, a sophisticated music player, empowers you to create playlists, express appreciation for your favorite songs, and effortlessly search for tracks. This application operates on Firebase Storage. Crafted by Mudaliar Nitish Shankar, this project serves as a culmination of efforts for the 6th Semester at Indus University.  Additionally, TuneTribe utilizes the Google API provided by Firebase and Razorpay API, securely stores user credentials, including normal email and password for login purposes. However, it&apos;s important to note that the app doesn&apos;t store preferences in playlists, ensuring that your data is not retained beyond the session. Exercise caution to prevent any potential loss of data."'
+        android:textAlignment="center"
+        android:textColor="#FEFEFE"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.366" />
+</androidx.constraintlayout.widget.ConstraintLayout>

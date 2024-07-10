@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="greatest_text_blue_welcome_screen">
+        <item name="android:layout_width">65dp</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:textColor">@color/special_blue_color_welcome_page</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">@color/blue_fromlogo</item>
+    </style>
+
+</resources>

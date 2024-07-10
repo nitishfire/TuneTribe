@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/farg_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sign_log_background_color"
+    tools:context=".fragment.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nowPlaying"
+        android:name="com.example.musicplayer.fragment.NowPlaying"
+        android:layout_width="395dp"
+        android:layout_height="58dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout="@layout/fragment_now_playing" />
+
+    <TextView
+        android:id="@+id/welcome_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="70dp"
+        android:text="Welcome To TuneTribe"
+        android:textColor="#FEFEFE"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton7"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.107" />
+
+    <TextView
+        android:id="@+id/welcome_message2"
+        android:layout_width="211dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="70dp"
+        android:background="@color/transperent"
+        android:fontFamily="@font/cen_got_bold"
+        android:text="Continue Listning"
+        android:textColor="#FEFEFE"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_message"
+        app:layout_constraintVertical_bias="0.113" />
+
+    <TextView
+        android:id="@+id/welcome_message3"
+        android:layout_width="211dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="70dp"
+        android:background="@color/transperent"
+        android:fontFamily="@font/cen_got_bold"
+        android:text="Your Top Mixes"
+        android:textColor="#FEFEFE"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_message"
+        app:layout_constraintVertical_bias="0.66" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="624dp"
+        android:src="@drawable/blue_top_gradient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="173dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/home_page_cr_button_layout"
+        android:drawableLeft="@drawable/cl_4"
+        android:fontFamily="@font/cen_got_bold"
+        android:text="Ed Sheeran"
+        android:textColor="#FEFEFE"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/button8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_message2"
+        app:layout_constraintVertical_bias="0.611" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="173dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="364dp"
+        android:background="@drawable/home_page_cr_button_layout"
+        android:drawableLeft="@drawable/cl_5"
+        android:fontFamily="@font/cen_got_bold"
+        android:text="Imagine Dragons"
+        android:textColor="#FEFEFE"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_message2"
+        app:layout_constraintVertical_bias="0.951" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="173dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="142dp"
+        android:background="@drawable/home_page_cr_button_layout"
+        android:drawableLeft="@drawable/cl_6"
+        android:fontFamily="@font/cen_got_bold"
+        android:text="Lo-Fi Beats"
+        android:textColor="#FEFEFE"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.354"
+        app:layout_constraintStart_toEndOf="@+id/button7"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_message2"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="173dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/home_page_cr_button_layout"
+        android:drawableLeft="@drawable/cl_3"
+        android:fontFamily="@font/cen_got_bold"
+        android:text="One Direction"
+        android:textColor="#FEFEFE"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_message2"
+        app:layout_constraintVertical_bias="0.902" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="173dp"
+        android:layout_height="55dp"
+        android:background="@drawable/home_page_cr_button_layout"
+        android:drawableLeft="@drawable/cl_1"
+        android:fontFamily="@font/cen_got_bold"
+        android:text="Coffee And Jazz"
+        android:textColor="#FEFEFE"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_message2"
+        app:layout_constraintVertical_bias="0.588" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="368dp"
+        android:layout_height="197dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.892">
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/image_slider"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            app:iss_auto_cycle="true"
+            app:iss_delay="1000"
+            app:iss_period="3000"
+            app:iss_text_align="CENTER" />
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="173dp"
+        android:layout_height="55dp"
+        android:background="@drawable/home_page_cr_button_layout"
+        android:drawableLeft="@drawable/cl_2"
+        android:fontFamily="@font/cen_got_bold"
+        android:text="Released"
+        android:textColor="#FEFEFE"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_message2"
+        app:layout_constraintVertical_bias="0.592" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:background="@color/transperent"
+        android:src="@drawable/profile_photo_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.094"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:background="@color/transperent"
+        android:src="@drawable/log_out_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.094"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

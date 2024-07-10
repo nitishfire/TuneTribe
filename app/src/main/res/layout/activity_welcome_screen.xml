@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/special_blue_color_welcome_page"
+    tools:context=".Welcome_Screen">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="149dp"
+        android:layout_height="146dp"
+        app:srcCompat="@drawable/gradient_image_welcome_page"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044"
+        app:srcCompat="@drawable/gradient_image_welcome_page" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="428dp"
+        android:layout_height="400dp"
+        android:background="@drawable/black_box_for_welcome_page"
+        android:textSize="24sp"
+        android:translationY="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/wel_text1"
+        android:layout_width="365dp"
+        android:layout_height="152dp"
+        android:fontFamily="@font/cen_got_reg"
+        android:text="From the           to the\n          hits, play your\n favorite tracks on TUNETRIBE\n now!"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/greatest_text_blue_welcome_screen2"
+        android:layout_width="65dp"
+        android:layout_height="36dp"
+        android:fontFamily="@font/cen_got_reg"
+        android:text="latest"
+        android:textAlignment="gravity"
+        android:textColor="@color/special_blue_color_welcome_page"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/wel_text1"
+        app:layout_constraintEnd_toEndOf="@+id/wel_text1"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toStartOf="@+id/wel_text1"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.509" />
+
+    <TextView
+        android:id="@+id/greatest_text_blue_welcome_screen"
+        style="@style/greatest_text_blue_welcome_screen"
+        android:layout_width="110dp"
+        android:layout_height="38dp"
+        android:fontFamily="@font/cen_got_reg"
+        android:text="greatest"
+        app:layout_constraintBottom_toBottomOf="@+id/wel_text1"
+        app:layout_constraintEnd_toEndOf="@+id/wel_text1"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="@+id/wel_text1"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.641"
+        tools:ignore="DuplicateIds" />
+
+    <TextView
+        android:id="@+id/slider_blue"
+        android:layout_width="59dp"
+        android:layout_height="9dp"
+        android:background="@drawable/slider_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.398"
+        app:layout_constraintStart_toStartOf="@+id/wel_text1"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.684" />
+
+    <TextView
+        android:id="@+id/slider_white"
+        android:layout_width="59dp"
+        android:layout_height="9dp"
+        android:layout_marginEnd="124dp"
+        android:background="@drawable/slider_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/wel_text1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.684" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/welcomeButton"
+        android:layout_width="377dp"
+        android:layout_height="59dp"
+        android:background="@drawable/buttonshapeandcolor"
+        android:fontFamily="@font/mulish_bold"
+        android:text="Get Started"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wel_text1"
+        app:layout_constraintVertical_bias="0.512" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="103dp"
+        android:layout_height="103dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.993"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.961"
+        app:srcCompat="@drawable/gradient_image_welcome_page" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="368dp"
+        android:layout_height="576dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.192"
+        app:srcCompat="@drawable/tunetribe_girl_welcomepage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Home"
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/nav_home_button" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Explore"
+        android:id="@+id/searchFragment"
+        android:icon="@drawable/nav_search_button"/>
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Library"
+        android:id="@+id/libraryFragment"
+        android:icon="@drawable/nav_library_button"/>
+</menu>
